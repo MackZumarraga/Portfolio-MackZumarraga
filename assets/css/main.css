@@ -2436,6 +2436,10 @@ input, select, textarea {
 	}
 
 /* Actions */
+	.links {
+		width: 32px;
+		height: 32px;
+	}
 
 	ul.actions {
 		display: -moz-flex;
@@ -2460,6 +2464,11 @@ input, select, textarea {
 			justify-content: center;
 			width: 100%;
 			margin-left: 0;
+			/* margin-left: 55%; */
+		}
+
+		#button-wide-primary {
+			margin-left: 55%;
 		}
 
 			ul.actions.special li:first-child {
@@ -2583,12 +2592,20 @@ input, select, textarea {
 	ul.major-icons {
 		list-style: none;
 		padding-left: 0;
+		display: grid;
+    	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 	}
 
 		ul.major-icons li {
 			display: inline-block;
 			padding: 2.5em;
 			text-align: center;
+			margin-left: 35%;
+			cursor: default;
+		}
+
+		ul.major-icons li:hover {
+			color: #14e3a9;
 		}
 
 			ul.major-icons li .icon {
@@ -3120,7 +3137,8 @@ input, select, textarea {
 	}
 
 		#footer a {
-			border-bottom-color: rgba(255, 255, 255, 0.5);
+			/* border-bottom-color: rgba(255, 255, 255, 0.5); */
+			border-bottom: none;
 		}
 
 			#footer a:hover {
